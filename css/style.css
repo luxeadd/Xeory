@@ -1,0 +1,722 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #241913;
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    overflow-wrap: break-word;
+    word-break: normal;
+    color: #241913;
+}
+
+/* CSSハンバーガー */
+.open,.close {
+  display: none;
+}
+
+.hambargar {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  top: -100vw;
+  padding-top: 0px;
+  transition: 0.5s;
+  background: #312f2f;
+  z-index: 10;
+}
+
+.hambargar p {
+  color: white;
+  font-size: 20px;
+  margin: 10px 50px;
+}
+.hambargar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+.hambargar a {
+  color: white;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+input[type="checkbox"]:checked ~ .hambargar{
+  top: 75px;
+}
+
+input[type="checkbox"]:checked ~ .back{
+  position: absolute;
+  top: 75px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+header {
+  background: #47B39D;
+  margin-bottom: 50px;
+}
+
+.common-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+.header-nav_left a {
+  color: white;
+  font-size: 24px;
+  line-height: 3.5;
+}
+
+.header-nav_left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right_list {
+  display: flex;
+}
+
+.nav-right_list li:first-child {
+  margin-right: 5px;
+}
+
+.nav-right_list a {
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 5.5;
+  padding: 0 10px;
+  position: relative;
+}
+
+.nav-right_list a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0;
+ position: absolute;
+ top: 0;
+ left: 0;
+ transition: 0.3s;
+
+}
+
+.nav-right_list a:hover::before{
+  opacity: 0.1;
+}
+
+.block {
+  width: 100%;
+  z-index: 10;
+}
+
+.header-main {
+  background: #41BAA4;
+  padding: 270px 0 430px;
+}
+
+.header-title {
+  font-size: 48px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header-text {
+  font-size: 15px;
+  color: white;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.section {
+  margin-bottom: 50px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  padding: 28px 0;
+  line-height: 1.0;
+  border-top:  1px solid gainsboro;
+  border-bottom:  1px solid gainsboro;
+}
+
+.section-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0  50px;
+ 
+}
+
+.section-item {
+  width: 18%;
+  position: relative;
+}
+
+.section-item img {
+  width: 100%;
+  
+}
+
+.img-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:white;
+  background-color:#D6B038;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-number_silber {
+  background: #BFC4C9;
+}
+.img-number_bronze {
+  background: #B9704E;
+}
+.img-number_black {
+  background: #47422F;
+}
+
+
+.category {
+  width: 100px;
+  font-size: 12px;
+  padding: 10px;
+  background: #47B39D;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 25px;
+}
+
+.post {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.sectionB {
+  width: 100%;
+}
+
+.section-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #47B39D;
+  
+}
+
+.sectionB-header {
+  background: #3B4552;
+  color:  white;
+  padding: 16px 0;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.sectionB-icon {
+   font-size: 24px;
+}
+
+.sectionB-title {
+   font-size: 28px;
+  
+}
+
+.sectionB-sub {
+  font-size: 16px;
+  
+  
+ }
+
+ .triangle {
+   width: 0px;
+   height: 0px;
+   margin: auto;
+   border-top: 20px solid #3B4552;
+   border-left: 50px solid transparent;
+   border-right: 50px solid transparent;
+   position: absolute;
+   bottom: -20px;
+   transform:translateX(-50%) ;
+ }
+
+.sectionB-inner {
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  position: relative;
+}
+
+.wrap-gains {
+  background: rgb(243, 243, 243);
+}
+
+ .sectionB-block {
+   margin: 0 auto;
+   max-width: 1200px;
+   overflow: visible;
+   padding: 0 50px;
+   
+ }
+
+.sectionB-block::after {
+   /* floatの回り込み解除 */
+  display: block;
+  clear: both;
+  content: '';
+}
+
+ .sectionB-block_title {
+   width: 54%;
+   align-self: flex-start;
+  
+  
+ }
+
+
+ .sectionB-number{
+   width: 25px;
+   background-color: #47B39D;
+   color: white;
+   font-size: 16px;
+   padding: 40px 5px 5px;
+   text-align: center;
+   margin-bottom: 25px;
+ }
+
+ .sectionB-block_title h3 {
+   font-size: 36px;
+   color: #47B39D;
+   margin-bottom: 8px;
+ 
+ }
+
+ .eng {
+   color: #47B39D;
+   font-size: 13px;
+   margin-bottom: 40px;
+ }
+
+ .sectionB-img {
+   display: block;
+   width: 40%;
+   height: 100%;
+   background: url(../img/macbook-at-the-coffee-shop.jpg) center top no-repeat;
+   position: absolute;
+   background-size: cover;
+   top: 0;
+   right: 0;
+ }
+ 
+ .img2 {
+   background: url(../img/two-coffee-at-the-shop.jpg)center top no-repeat;
+   background-size: cover;
+ }
+ .img3 {
+   background: url(../img/imac-glasses-desk.jpg)center top no-repeat;
+   background-size: cover;
+ }
+ .img4 {
+   background: url(../img/macbook-holding.png)center top no-repeat;
+   background-size: cover;
+ }
+
+ .return-text {
+   float:right;
+ }
+
+ .return-img {
+   top: 0;
+   left: 0;
+   
+  
+ }
+  
+ .sectionB-text {
+  width: 54%;
+ 
+ }
+ .sectionB-text p {
+   font-size: 16px;
+   margin-bottom: 50px;
+   width: 100%;
+ }
+
+.sectionB-btn {
+  padding-bottom: 70px;
+}
+ .sectionB-btn a{
+   display: block;
+   text-align: center;
+   font-size: 14px;
+   background: #FF6C00;
+   color: white;
+   width: 130px;
+   padding: 10px 20px;
+   border-radius: 5px;
+   transition: 0.2s;
+ }
+
+.sectionB-btn a:hover {
+  opacity: 0.7;
+}
+
+.sectionC-block {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionC-item {
+  width: 50%;
+  padding-bottom: 100px;
+}
+
+.C-item_left{
+  padding-right: 50px;
+  border-right: 1px solid gainsboro;
+}
+.C-item_right{
+  padding-left: 50px;
+  
+}
+
+.sectionC-item h3 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+  color: #47B39D;
+}
+
+.sectionC-item p {
+  font-size: 13px;
+  color: #47B39D;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sectionC-btn a {
+  display: block;
+  width: 50%;
+  text-align: center;
+  background: #47B39D;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  box-sizing: border-box;
+
+}
+
+.gmap {
+  background: none;
+}
+
+.sectionD-text {
+  padding: 80px 0;
+  width: 650px;
+}
+
+
+
+.sectionD-text p {
+  font-size: 16px;
+  border-top: 1px solid gainsboro;
+ 
+}
+
+.sectionD-text p:last-child{
+  border-bottom: 1px solid gainsboro;
+}
+
+.sectionD-text span {
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sectionD-text .left {
+  width: 20%;
+}
+
+.sectionD-text .right {
+  width: 79%;
+}
+
+.sectionE {
+  background: #47B39D;
+  color: white;
+}
+
+.contact-form {
+  padding: 80px 200px;
+}
+
+.form-parts {
+  display: block;
+}
+
+.form-parts span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px gainsboro;
+  font-size: 18px;
+  line-height: 2.0;
+  margin-bottom: 50px;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+  border: 1px solid gainsboro;
+}
+
+input:focus,textarea:focus{
+   outline: 0;
+}
+
+.contact-submit {
+  width: 200px;
+  margin: 20px auto;
+  display: block;
+  background: black;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.contact-submit:focus {
+  border: 2px solid yellow;
+}
+
+footer{
+  background: #031731;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-title {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(68, 67, 67);
+  margin-bottom: 40px;
+}
+
+.footer-title h3 {
+  font-size: 26px;
+}
+
+.footer-block {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.footer-item {
+  width: 180px;
+  margin-right: 20px;
+}
+
+.footer-contact{
+  margin-left: 150px;
+}
+
+.footer-item p {
+  font-size: 16px;
+}
+
+footer .fas,footer .fab {
+  margin-right: 10px;
+  padding-top: 5px;
+  font-size: 12px;
+  
+}
+
+
+.footer-item a {
+  display: block;
+  color: white;
+  padding: 5px 0px;
+  display: flex;
+  transition: 0.2s;
+}
+
+.footer-item a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  background: black;
+  padding: 30px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
